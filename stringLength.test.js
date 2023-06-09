@@ -1,7 +1,7 @@
 const stringLength = require('./stringLength');
 
 describe('stringLength', () => {
-  it('should return true if the string is at least 1 character long and not longer than 10 characters', () => {
+  it('should pass if the string is at least 1 character long and not longer than 10 characters', () => {
     expect(stringLength('a')).toBeGreaterThan(0);
     expect(stringLength('abcdefghi')).toBeLessThanOrEqual(10);
     expect(stringLength('012345678')).toBeLessThanOrEqual(10);
